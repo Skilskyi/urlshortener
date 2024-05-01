@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using UrlShortenerSkilskyi;
 using UrlShortenerSkilskyi.Data;
-using UrlShortenerSkilskyi.Models;
+using UrlShortenerSkilskyi.ViewModel;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,7 +51,5 @@ app.UseEndpoints(endpoints =>
         pattern: "{controller=Url}/{action=Add}"
     );
 });
-
-
 
 app.Run();

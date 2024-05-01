@@ -1,4 +1,4 @@
-namespace UrlShortenerSkilskyi.Models
+namespace UrlShortenerSkilskyi.ViewModel
 {
     public class ErrorViewModel
     {

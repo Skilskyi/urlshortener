@@ -1,0 +1,17 @@
+﻿@model UrlShortenerSkilskyi.Models.About
+@{
+}
+
+<h1>About</h1>
+
+<p>@Model.Description</p>
+
+@if (User.IsInRole("Admin"))
+{
+    <form method="post" asp-controller="About" asp-action="Edit">
+        <textarea name="description" rows="4" cols="50">@Model.Description</textarea>
+        <button type="submit">Save</button>
+    </form>
+}
+
+<a asp-action="Edit" class="btn btn-primary">Edit</a>

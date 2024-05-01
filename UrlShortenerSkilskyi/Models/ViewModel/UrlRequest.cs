@@ -1,4 +1,4 @@
-﻿namespace UrlShortenerSkilskyi.ViewModel
+﻿namespace UrlShortenerSkilskyi.Models.ViewModel
 {
     public class UrlRequest
     {

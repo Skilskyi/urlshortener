@@ -12,8 +12,8 @@ using UrlShortenerSkilskyi.Data;
 namespace UrlShortenerSkilskyi.Migrations
 {
     [DbContext(typeof(UrlShortenerDbContext))]
-    [Migration("20240501161009_MigrUrl")]
-    partial class MigrUrl
+    [Migration("20240501181017_MigrUrlv3")]
+    partial class MigrUrlv3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,36 @@ namespace UrlShortenerSkilskyi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("UrlShortenerSkilskyi.Models.Url", b =>
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "buyer"
+                        });
+                });
+
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.Url", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +82,7 @@ namespace UrlShortenerSkilskyi.Migrations
                     b.ToTable("Urls");
                 });
 
-            modelBuilder.Entity("UrlShortenerSkilskyi.Models.User", b =>
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -69,23 +98,47 @@ namespace UrlShortenerSkilskyi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "admin@gmail.com",
+                            Password = "123",
+                            RoleId = 1
+                        });
                 });
 
-            modelBuilder.Entity("UrlShortenerSkilskyi.Models.Url", b =>
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.Url", b =>
                 {
-                    b.HasOne("UrlShortenerSkilskyi.Models.User", null)
+                    b.HasOne("UrlShortenerSkilskyi.ViewModel.User", null)
                         .WithMany("Urls")
                         .HasForeignKey("UserId");
                 });
 
-            modelBuilder.Entity("UrlShortenerSkilskyi.Models.User", b =>
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.User", b =>
+                {
+                    b.HasOne("UrlShortenerSkilskyi.ViewModel.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.Role", b =>
+                {
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("UrlShortenerSkilskyi.ViewModel.User", b =>
                 {
                     b.Navigation("Urls");
                 });

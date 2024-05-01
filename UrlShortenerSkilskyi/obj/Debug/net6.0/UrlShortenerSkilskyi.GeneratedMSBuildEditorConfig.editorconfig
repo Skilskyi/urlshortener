@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\taras\source\repos\urlshortenerSkilskyi\UrlShortenerSkilskyi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/About/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +44,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/ShortUrlTable/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcnRVcmxUYWJsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/ShortUrlTable/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcnRVcmxUYWJsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/ShortUrlTable/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcnRVcmxUYWJsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/taras/source/repos/urlshortenerSkilskyi/UrlShortenerSkilskyi/Views/Url/Add.cshtml]

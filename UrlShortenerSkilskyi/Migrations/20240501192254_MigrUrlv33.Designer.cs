@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UrlShortenerSkilskyi.Data;
 
@@ -11,9 +12,10 @@ using UrlShortenerSkilskyi.Data;
 namespace UrlShortenerSkilskyi.Migrations
 {
     [DbContext(typeof(UrlShortenerDbContext))]
-    partial class UrlShortenerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240501192254_MigrUrlv33")]
+    partial class MigrUrlv33
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

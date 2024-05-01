@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UrlShortenerSkilskyi.Data;
 using UrlShortenerSkilskyi.Models;
+using UrlShortenerSkilskyi.Models.ViewModel;
 using UrlShortenerSkilskyi.ViewModel;
 
 namespace UrlShortenerSkilskyi.Controllers

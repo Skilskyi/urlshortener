@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Security.Claims;
 using UrlShortenerSkilskyi.Data;
-using UrlShortenerSkilskyi.Models;
+using UrlShortenerSkilskyi.ViewModel;
 
 namespace UrlShortenerSkilskyi.Controllers
 {
