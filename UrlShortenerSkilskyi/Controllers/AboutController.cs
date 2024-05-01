@@ -20,7 +20,7 @@ public class AboutController : Controller
         var about = _context.About.FirstOrDefault();
         if (about == null)
         {
-            about = new About(); // Створюємо новий об'єкт, якщо немає запису в базі даних
+            about = new About(); 
         }
         return View(about);
     }

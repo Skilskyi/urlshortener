@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrlShortenerSkilskyi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8362010be3d401cfa30b8144fc2f3bdbb67a7efa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+324f58671083a921c1eb80e4b27195ae79241409")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrlShortenerSkilskyi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrlShortenerSkilskyi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
